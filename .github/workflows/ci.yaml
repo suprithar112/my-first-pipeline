@@ -16,7 +16,7 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Test successful"
+      - run: exit 1
 
   deploy:
     runs-on: ubuntu-latest
